@@ -8,6 +8,7 @@
 	<packaging>war</packaging>
 	
 	<dependencies>
+		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -15,7 +16,8 @@
 			<scope>provided</scope>
 		</dependency>
 		
-	
+		<!-- Jersey Rest -->
+		
 		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-bundle -->
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
@@ -39,12 +41,13 @@
 			<version>1.19.4</version>
 		</dependency>
 		
+		<!-- JAXB -->
 		<dependency>
 			<groupId>com.sun.xml.bind</groupId>
 			<artifactId>jaxb-core</artifactId>
 			<version>2.3.0.1</version>
 		</dependency>
-		<!-- Jaxb -->
+		
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
@@ -56,6 +59,35 @@
 			<artifactId>jaxb-impl</artifactId>
 			<version>2.3.1</version>
 		</dependency>
+		
+		<!-- Genjon Convert JSON -->
+		<dependency>
+			<groupId>com.owlike</groupId>
+			<artifactId>genson</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- Weld CDI -->
+		
+		<!-- https://mvnrepository.com/artifact/org.jboss.weld.servlet/weld-servlet-core -->
+			<dependency>
+			    <groupId>org.jboss.weld.servlet</groupId>
+			    <artifactId>weld-servlet-core</artifactId>
+			    <version>3.1.4.Final</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxrs -->
+			
+			<dependency>
+			    <groupId>org.jboss.resteasy</groupId>
+			    <artifactId>resteasy-jaxrs</artifactId>
+			    <version>3.13.0.Final</version>
+			</dependency>	
+			
+			<!-- Gson Google -->
+			<dependency>
+			    <groupId>com.google.code.gson</groupId>
+			    <artifactId>gson</artifactId>
+			    <version>2.8.5</version>
+			</dependency>	
 	</dependencies>
 
 	<build>
