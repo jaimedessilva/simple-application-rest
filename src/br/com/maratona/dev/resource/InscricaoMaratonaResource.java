@@ -59,9 +59,9 @@ public class InscricaoMaratonaResource {
 	/*
 	 * List
 	 */
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/lista")
+	@GET //Ler o recurso 
+	@Produces(MediaType.APPLICATION_JSON) // Converte em JSON
+	@Path("/lista")//Define a URI do Recurso
 	public List<Pessoa> matricula() {
 		init();
 		return pessoas;

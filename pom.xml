@@ -60,7 +60,7 @@
 			<version>2.3.1</version>
 		</dependency>
 		
-		<!-- Genjon Convert JSON -->
+		<!-- Genson Convert JSON -->
 		<dependency>
 			<groupId>com.owlike</groupId>
 			<artifactId>genson</artifactId>
